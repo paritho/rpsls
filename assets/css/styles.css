@@ -1,0 +1,167 @@
+@import "../../contestants/bot_01/css/bot_01.css";
+@import "../../contestants/bot_02/css/bot_02.css";
+
+hyper-navbar .navbar-brand {
+  color: var(--cyan) !important;
+}
+
+hyper-navbar .nav-item {
+  margin-right: 0.5rem;
+}
+
+hyper-navbar .nav-item .nav-link {
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+hyper-navbar .nav-item.active:not(:hover) .nav-link {
+  color: var(--white) !important;
+  background-color: var(--cyan);
+}
+
+hyper-navbar .nav-item:hover .nav-link {
+  border-color: var(--cyan);
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: var(--cyan);
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+h1, h2, h3 {
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h5 {
+  font-size: 1.75rem;
+}
+
+select {
+  padding: 0.5rem 1rem;
+}
+
+.invisible {
+  opacity: 0;
+  transition: visibility 0.35s, opacity 0.35s ease;
+}
+
+.visible {
+  opacity: 1;
+  transition: visibility 0.35s, opacity 0.35s ease;
+}
+
+#roster-form-row {
+  height: 5.75rem;
+}
+
+.modal-form-item,
+#match-group {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.modal-form-item.invisible {
+  height: 0;
+  margin-bottom: 0;
+  transition: all 0.35s ease;
+}
+
+.modal-form-item.visible {
+  height: 5.125rem;
+  transition: all 0.35s ease;
+}
+
+#match-group.invisible {
+  height: 0;
+  width: 0;
+  transition: all 0.35s ease;
+}
+
+#match-group.visible {
+  height: 5.75rem;
+  width: 24.875rem;
+  transition: all 0.35s ease;
+}
+
+.match-options-form,
+#match-options-btn,
+#match-start-btn {
+  font-size: 1.5rem;
+}
+
+#match-options-btn,
+#match-start-btn {
+  color: var(--cyan);
+  margin: 0 0.5rem;
+}
+
+#match-options-btn svg {
+  margin-top: -0.25rem;
+}
+
+#match-start-btn {
+  min-width: 9.675rem;
+}
+
+#match-start-spinner.invisible {
+  height: 0;
+  width: 0;
+  border: 0;
+  transition: all 0.35s ease;
+}
+
+.viewport-container .viewport-transition-spacer {
+  flex: 0;
+  transition: flex 0.5s;
+}
+
+.viewport-container.shifted .viewport-transition-spacer {
+  flex: auto;
+}
+
+.player-placeholder {
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.player-placeholder span {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+#vs-block {
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.player-message {
+  width: 18.75rem;
+  height: 18.75rem;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.player-message.collapsed {
+  height: 0;
+  transition: height 0.35s ease;
+}
+
+#training-start-group {
+  height: 2.5rem;
+  width: 10rem;
+}
