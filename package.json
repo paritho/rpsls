@@ -1,0 +1,11 @@
+{
+  "name": "rpsls",
+  "version": "1.0.0",
+  "description": "An interface for battling rpsls bots against each other.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brett Largent",
+  "license": "ISC"
+}
